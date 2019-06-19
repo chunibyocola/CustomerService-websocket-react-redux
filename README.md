@@ -2,7 +2,7 @@
 
 It's a CustomerService demo.
 
-You can test it at [Customer](cs.sweetcola.xyz) and [Staff](cs.sweetcola.xyz/csstaff) (Can't send Image).
+You can test it at [Customer](http://cs.sweetcola.xyz) and [Staff](http://cs.sweetcola.xyz/csstaff) (Can't send Image).
 
 ## cs-frontdend Start
 ```
