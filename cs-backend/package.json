@@ -1,0 +1,22 @@
+{
+    "name": "cs-server",
+    "version": "1.0.0",
+    "description": "Customer Service Backend",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/app.js"
+    },
+    "keywords": [
+        "websocket",
+        "async"
+    ],
+    "author": "Sweetcola",
+    "license": "Apache-2.0",
+    "repository": {},
+    "dependencies": {
+        "co": "^4.6.0",
+        "mysql2": "^1.6.5",
+        "sequelize": "^5.8.6",
+        "websocket": "^1.0.28"
+    }
+}
