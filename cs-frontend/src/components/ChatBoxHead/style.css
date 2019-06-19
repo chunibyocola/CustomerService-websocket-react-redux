@@ -1,0 +1,63 @@
+
+.chatting-Head {
+    border-radius: 5px 5px 0 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    min-width: 350px;
+    height: 30px;
+    line-height: 30px;
+    cursor: move;
+}
+.chatting-Head-Quit {
+    float: left;
+    position: relative;
+}
+.chatting-Head-Quit:hover {
+    cursor: pointer;
+}
+.chatting-Head-Quit-InnerA {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-bottom: transparent solid 20px;
+    border-top: transparent solid 20px;
+    border-right: white solid 25px;
+}
+.chatting-Head-Quit-InnerB {
+    top: 5px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-bottom: transparent solid 20px;
+    border-top: transparent solid 20px;
+    border-right: black solid 25px;
+    position: absolute;
+}
+.chatting-Head-Quit-Btn {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.chatting-Head-Title {
+    text-align: center;
+    font-size: 20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.chatting-Head-Setting {
+    cursor: pointer;
+    float: right;
+}
+.chatting-Head-Setting-Inner {
+    /*border: white solid 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 10px;*/
+    height: 25px;
+}

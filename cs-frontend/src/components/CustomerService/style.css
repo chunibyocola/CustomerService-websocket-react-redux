@@ -1,0 +1,136 @@
+
+#chattingBox {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.chatBox {
+    position: fixed;
+    right: 150px;
+    top: 50px;
+    width: 350px;
+}
+
+.csRequestBox {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px black solid;
+    height: 46px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.csRequestText {
+    padding: 5px;
+    width: 140px;
+    resize: none;
+    height: 36px;
+    border-style: none;
+    outline: none;
+}
+
+.csRequestBtn {
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    height: 48px;
+    float: right;
+    border: 0;
+}
+
+.csRequestWaiting {
+    display: inline-block;
+    padding: 5px;
+    width: 140px;
+    height: 36px;
+    font-size: 13px;
+}
+
+.msgBox {
+    float: left;
+    width: 350px;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0;
+    background-color: black
+}
+
+.staffInfoBox {
+    float: right;
+    width: 120px;
+    height: 200px;
+    margin: 5px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.csB-Item {
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.csB-Item-Title {
+    width: 100%;
+    background: #1B9AF7;
+}
+.csB-Item-Content {
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.waiting {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: 100;
+    background: rgba(102,102,102, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99666666, endColorstr=#99666666);
+}
+
+/*    start customer service button     */
+.customerService {
+    position: fixed;
+    z-index: 99999;
+    right: 50px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.cs-showBtn {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cs-showBtn :hover {
+    cursor: pointer;
+}
+
+.deskTop-signal {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+    background-color: #9ed900;
+    box-shadow: 0 0 10px #9ed900;
+}

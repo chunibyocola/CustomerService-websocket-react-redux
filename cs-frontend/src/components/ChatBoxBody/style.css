@@ -1,0 +1,154 @@
+
+.chatting-Body {
+    cursor: default;
+    min-width: 350px;
+    background-color: white;
+    width: 100%;
+}
+.chatting-Body-TextArea {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+.chatting-Body-TextArea::-webkit-scrollbar{
+    width:5px;
+    height:5px;
+}
+.chatting-Body-TextArea::-webkit-scrollbar-track {
+    background: #f6f6f6;
+    border-radius:2px;
+}
+.chatting-Body-TextArea::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius:2px;
+}
+.chatting-Body-TextArea::-webkit-scrollbar-thumb:hover {
+    background: #747474;
+}
+.chatting-Body-TextArea::-webkit-scrollbar-corner {
+    background: #f6f6f6;
+}
+.textArea-Item {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+/*** center ***/
+.textArea-CenterItem {
+    text-align: center;
+}
+.textArea-CenterItem-Notice {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    font-size: 12px;
+}
+/*** left ***/
+.textArea-LeftItem-ProfilePhoto {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.textArea-LeftItem-ProfilePhoto .img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.textArea-LeftItem-Triangle {
+    margin-left: 5px;
+    margin-top: 10px;
+    float: left;
+    width: 0;
+    height: 0;
+    border-bottom: transparent solid 5px;
+    border-top: transparent solid 5px;
+    border-right: #DDDDDD solid 10px;
+}
+.textArea-LeftItem-MsgBox {
+    text-align: left;
+    margin-right: 45px;
+    margin-left: 45px;
+}
+.textArea-LeftItem-MsgDialog {
+    width:auto;
+    display:inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    font-size: 12px;
+    color: #666;
+    word-break:break-all;
+    overflow: hidden;
+}
+/*** right ***/
+.textArea-RightItem-ProfilePhoto {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.textArea-RightItem-ProfilePhoto .img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.textArea-RightItem-Triangle {
+    margin-right: 5px;
+    margin-top: 10px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-bottom: transparent solid 5px;
+    border-top: transparent solid 5px;
+    border-left: #4cb0f9 solid 10px;
+}
+.textArea-RightItem-MsgBox {
+    margin-right: 45px;
+    margin-left: 45px;
+    text-align: right;
+    overflow: hidden;
+}
+.textArea-RightItem-MsgDialog {
+    font-size: 12px;
+    color: #666;
+    width:auto;
+    display:inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #4cb0f9;
+    word-break:break-all;
+    overflow: hidden;
+    height: auto;
+    float: right;
+}
+.textArea-Flag {
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+.textArea-TextFlag {
+    background-color: grey;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+.textArea-ImgFlag {
+    width: 20px;
+    height: 20px;
+}
+.chat-img {
+    max-width: 100px;
+    display: block;
+}
+.chat-img::after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}

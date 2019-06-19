@@ -1,0 +1,58 @@
+/*chatting-Send*/
+.chatting-Footer {
+    cursor: default;
+    min-width: 350px;
+    border-top: #BEBEBE solid 1px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 0 0 10px 10px;
+}
+.chatting-Footer-Upload {
+    width: 100%;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    margin-top: 3px;
+}
+.chatting-Footer-UploadMenu {
+    list-style: none; 
+    display: inline;
+}
+.chatting-Footer-UploadMenu li {
+    float: left;
+    margin-bottom: 5px;
+}
+.chatting-Footer-UploadItem {
+    background-color: #BEBEBE;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: white;
+    margin-right: 5px;
+}
+.chatting-Footer-SendBox {
+    margin: 5px;
+    margin-top: 0px;
+}
+.sendBox-TextArea {
+    width: 100%;
+    resize: none;
+    height: 80px;
+    border-style: none;
+    outline: none;
+}
+.cs-send-btn {
+    cursor: pointer;
+    outline: none;
+    background-color: black;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 0;
+    border: none;
+    color: white;
+    display: inline-block;
+}

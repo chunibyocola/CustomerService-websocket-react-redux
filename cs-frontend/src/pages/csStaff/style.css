@@ -1,0 +1,44 @@
+/*        customer service -----staff          */
+.staffChatBox {
+    text-align: right;
+    margin: 0 auto;
+    width: 700px;
+}
+.staffContactBox {
+    width: 200px;
+    float: left;
+}
+.staffMsgBox {
+    margin-left: 230px;
+    position: relative;
+}
+.contactBox-Item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: whitesmoke;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.sign-new-msg {
+    background: red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    line-height: 20px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 8px;
+    border-radius: 50%;
+}
+
+.waitingCount-text {
+    margin-right: 220px;
+}
