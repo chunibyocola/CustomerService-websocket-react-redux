@@ -10,7 +10,7 @@ const chatState = (state = initState, action) => {
     let { type, payload } = action;
 
     switch(type) {
-        case types.STAFF_ACCEPT_CUSTOMER: // action: { type, userInfo, chatLog }
+        case types.STAFF_ACCEPT_CUSTOMER: 
         {
             let msgCount = 1, msgStart = 0, unreadCount = 1;
             let { customerInfo, chatLog } = payload;
@@ -23,7 +23,7 @@ const chatState = (state = initState, action) => {
             };
             return { ...state };
         }
-        case types.REQUEST_CS_SUCCESS: // action: { type, staffInfo, chatLog }
+        case types.REQUEST_CS_SUCCESS: 
         {
             let msgCount = 1, msgStart = 0, unreadCount = 0;
             let { staffInfo, chatLog } = payload;
@@ -36,7 +36,7 @@ const chatState = (state = initState, action) => {
             };
             return { ...state };
         }
-        case types.CHAT_ALREADY_EXISTS: // action: { type, staffInfo, chatLogsList }; chatLogsList: [chatLog, ...]
+        case types.CHAT_ALREADY_EXISTS: 
         {
             let unreadCount = 0;
             let { staffInfo, chatLogs } = payload;
@@ -46,7 +46,7 @@ const chatState = (state = initState, action) => {
             state[staffInfo.userId] = { staffInfo, chatLogs: chatLogs, msgCount: chatLogs.length, unreadCount: unreadCount }
             return { ...state };
         }
-        case types.CUSTOMER_SEND_MSG: // action: { type, targetId, msg, msgId, userId }
+        case types.CUSTOMER_SEND_MSG: 
         {
             let { targetId, msg, msgId, senderId } = payload;
             let chatLog = { 
@@ -60,13 +60,13 @@ const chatState = (state = initState, action) => {
             state[targetId].msgCount++;
             return { ...state }
         }
-        case types.CUSTOMER_SEND_MSG_SUCCESS: // action: { type, msgId, staffId }
+        case types.CUSTOMER_SEND_MSG_SUCCESS: 
         {
             let { targetId, msgId } = payload;
             state[targetId].chatLogs[msgId].msgStatus = MsgStatus.UNREAD;
             return { ...state };
         }
-        case types.MSG_FROM_OWN: // action: { tpye, targetId, senderId, msg }
+        case types.MSG_FROM_OWN: 
         {
             let { targetId, senderId, msg, msgType } = payload;
             let chatLog = {
@@ -80,7 +80,7 @@ const chatState = (state = initState, action) => {
             state[targetId].msgCount++;
             return { ...state };
         }
-        case types.STAFF_SEND_MSG: // action: { type, targetId, msg, msgId, staffId }
+        case types.STAFF_SEND_MSG: 
         {
             let { targetId, msg, msgId, senderId } = payload;
             let chatLog = { 
@@ -95,7 +95,7 @@ const chatState = (state = initState, action) => {
             console.log(state);
             return { ...state };
         }
-        case types.STAFF_SEND_MSG_SUCCESS: // action: { type, msgId, userId }
+        case types.STAFF_SEND_MSG_SUCCESS: 
         {
             let { targetId, msgId } = payload;
             state[targetId].chatLogs[msgId].msgStatus = MsgStatus.UNREAD;
@@ -107,7 +107,7 @@ const chatState = (state = initState, action) => {
             delete state[targetId];
             return { ...state };
         }
-        case types.RECEIVE_MSG: // action: { type, chatLog, flag }
+        case types.RECEIVE_MSG: 
         {
             let { chatLog, flag } = payload;
             let senderId = chatLog.senderId;
@@ -123,7 +123,7 @@ const chatState = (state = initState, action) => {
             state[targetId].unreadCount = 0;
             return { ...state };
         }
-        case types.MSG_GET_READ: // action: { type, senderId }
+        case types.MSG_GET_READ: 
         {
             state[payload.senderId].chatLogs.map(
                 (chatLog) => { 
@@ -147,7 +147,7 @@ const chatState = (state = initState, action) => {
             state[targetId].msgCount++;
             return { ...state };
         }
-        case types.FILE_UPLOAD_END: // action: { type, targetId, msgId }
+        case types.FILE_UPLOAD_END: 
         {
             let { targetId, msgId, status } = payload;
             let msgStatus = status? MsgStatus.UNREAD: MsgStatus.WRONG;
