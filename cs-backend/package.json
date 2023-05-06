@@ -16,7 +16,7 @@
     "dependencies": {
         "co": "^4.6.0",
         "mysql2": "^1.6.5",
-        "sequelize": "^5.15.1",
+        "sequelize": "^5.22.5",
         "websocket": "^1.0.28"
     }
 }
